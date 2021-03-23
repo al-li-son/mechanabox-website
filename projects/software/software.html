@@ -12,7 +12,7 @@
         <!--Favicon-->
         <link rel="icon" href=/images/mechanabox_logo_opaque.png>
     </head>
-    <body class="has-navbar-fixed-top has-background-info">
+    <body class="has-navbar-fixed-top">
         <!--Navigation bar (on all pages)-->
         <nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
@@ -76,12 +76,26 @@
                 </div>
             </div>
         </section>
-        <div class="tile is-ancestor">
+        <div class="tile is-ancestor pt-4">
             <div class="tile is-parent">
-                <div class="tile is-child is-notification is-link" href=safetycalls.html>
-                    <p class="title">Safety Calls</p>
-                    <p class="subtitle"></p>
-                </div>  
+                <a class="block px-2">  
+                    <article class="tile is-child notification is-success">
+                        <p class="title">Julia Set Visualization</p>
+                        <p class="subtitle"></p>
+                    </article>    
+                </a> 
+                <a class="block px-2">      
+                    <article class="tile is-child notification is-primary">
+                        <p class="title">Minesweeper</p>
+                        <p class="subtitle"></p>
+                    </article>
+                </a>    
+                <a class="block px-2" href=safetycalls.html>
+                    <article class="tile is-child notification is-link">
+                        <p class="title">Safety Calls</p>
+                        <p class="subtitle"></p>
+                    </article>                      
+                </a>
             </div>
         </div>
     </body>
