@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Allison Li">
+        <meta name="description" content="Mechanabox is an online portfolio for engineering projects and a YouTube channel.">
+        <meta name="keywords" content="Engineering, Robotics, Maker, Cubing">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mechanabox | Hardware</title>
+        <!--Bulma CSS framework-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.css"/>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <!--Favicon-->
+        <link rel="icon" href=images/mechanabox_logo_opaque.png>
+    </head>
+    <body class="has-navbar-fixed-top">
+        <!--Navigation bar (on all pages)-->
+        <nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href = "/">
+                    <img src=../../images/mechanabox_website_logo.png alt="Mechanabox: Where a maker's ideas are stored">
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="../../index.html">
+                        Home
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Projects
+                        </a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" href=../software/software.html>
+                                Software
+                            </a>
+                            <a class="navbar-item" href=hardware.html>
+                                Hardware
+                            </a>
+                            <a class="navbar-item"  href=../cubing/cubing.html>
+                                Cubing
+                            </a>
+                        </div>
+                    </div>
+                    <a class="navbar-item" href="https://www.youtube.com/c/Mechanabox" target="_blank">
+                        YouTube
+                    </a>
+                    <a class="navbar-item" href=../../about.html>
+                        About Me
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <section class="hero is-small is-info is-bold">
+            <div class="hero-body">
+                <div class="box">
+                    <h1 class="title is-1 has-text-black has-text-centered">Hardware</h1>
+                    <div class="content is-size-4 has-text-centered">
+                        I have been fascinated by mechanism design and fabrication for a number of years, from
+                        Lego builds to Kinex to Rubik's cubes. My first deep-dive into hardware projects
+                        was during my experience as the mechanical lead for my VEX Robotics team in high school.
+                        In college at Olin, our classes focus on hands-on projects and I have been able to
+                        put together several hardware design projects with groups. I am currently the structures lead on
+                        Olin's Design Build Fly team, where I supervise the design and fabrication of our
+                        competition plane.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Project tiles-->
+        <div class="tile is-ancestor pt-4 px-4">
+            <div class="tile is-vertical">
+                <div class="tile">
+                    <div class="tile is-parent">
+                        <div class="tile is-child notification is-link" id="turning-point-tile">
+                            <p class="title">VEX Turning Point Robots</p>
+                            <div class="columns is-vcentered is-centered">
+                                <div class="column is-vcentered">
+                                    <div class="content">
+                                        <img src="../../images/hardware/turningpoint1.jpg">
+                                    </div>
+                                </div>
+                                <div class="column is-vcentered">
+                                    <div class="content">
+                                        <img src="../../images/hardware/turningpoint2.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="subtitle pt-2">
+                                I served as Captain of Vex Robotics Competition (VRC) team 750R, the Royals, for
+                                the 2018-19 season. I was also the mechanical lead, so I was responsible for organizing
+                                and supervising the design process, iteration, and testing of the robot mechanisms. This
+                                season's main challenges were designing a mechanism to intake and fire balls at targets
+                                at varying heights, a mechanism to flip over octagonal plastic "caps" and stack them
+                                on top of posts, and a robust drivetrain
+                                and main body that can drive up and on top of raised platforms. I worked on every part of
+                                the robot in our first iteration, primarily a linear puncher design for launching the balls
+                                and the rubber band roller intake that doubled as mechanism for flipping caps. We qualified
+                                to the World Championships through our robot skills score, and between State Championships
+                                and Worlds, we changed our design to a single flywheel. In the second iteration, I
+                                worked primarily on our new drivetrain and chassis as well as integrating the flywheel with
+                                a new roller intake system and a new mechanism to flip caps onto posts. 
+                            </p>
+                        </div>  
+                    </div>   
+                    <div class="tile is-parent">
+                        <div class="tile is-child notification is-success" id="tower-takeover-tile">
+                            <p class="title">VEX Tower Takeover</p>
+                            <figure class="image">
+                                <img src="../../images/hardware/towertakeover.jpg">
+                            </figure>
+                            <p class="subtitle pt-2">
+                                DESCRIPTION
+                            </p>
+                        </div>
+                    </div>            
+                    <div class="tile is-parent">     
+                        <div class="tile is-child notification is-info" id="dbf-tile">
+                            <p class="title">Design Build Fly</p>
+                            <p class="subtitle pt-2">
+                                DESCRIPTION
+                            </p>
+                        </div>    
+                    </div>         
+                </div>
+                <div class="tile">
+                    <div class="tile">
+                        <div class="tile is-parent">
+                            <div class="tile is-child notification is-info" id="pan-tilt-tile">
+                                <p class="title">Pan-Tilt Mechanism</p>
+                                <p class="subtitle pt-2">
+                                    DESCRIPTION
+                                </p>
+                            </div>  
+                        </div>
+                        <div class="tile is-parent">
+                            <div class="tile is-child notification is-primary" id="hopper-tile">
+                                <p class="title">Hopper Project</p>
+                                <p class="subtitle pt-2">
+                                    DESCRIPTION
+                                </p>
+                            </div>
+                        </div>            
+                        <div class="tile is-parent">     
+                            <div class="tile is-child notification is-link" id="play-experience-tile">
+                                <p class="title">Play Experience Project</p>
+                                <p class="subtitle pt-2">
+                                    DESCRIPTION
+                                </p>
+                            </div>    
+                        </div>                    
+                    </div>              
+                </div>           
+            </div>
+        </div>
+        <!--Project description modal overlays-->
+        <div class="modal" id="turning-point-modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <h1 class="modal-card-title">VEX Turning Point Robots</h1>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="content">
+                        <h3>First Design (New Jersey State Championships)</h3>
+                        <iframe width="512" height="288" src="https://www.youtube.com/embed/9R2VxOX52do" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3>Second Design (VEX World Championships)</h3>
+                        <iframe width="512" height="288" src="https://www.youtube.com/embed/mp-2U-cMjKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                </footer>
+            </div>
+        </div>
+        <div class="modal" id="tower-takeover-modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <h1 class="modal-card-title">VEX Tower Takeover Robots</h1>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="content">
+                        <h3>End of Season Design</h3>
+                        <p>This video must be viewed on YouTube rather than the embedded link due to having copyrighted music.</p>
+                        <iframe width="512" height="288" src="https://www.youtube.com/embed/_7QZcKdSjSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                </footer>
+            </div>
+        </div>
+        <div class="modal" id="dbf-modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <h1 class="modal-card-title">Design Build Fly</h1>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="content">
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                </footer>
+            </div>
+        </div>
+        <div class="modal" id="pan-tilt-modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <h1 class="modal-card-title">Pan-Tilt Mechanism</h1>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="content">
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                </footer>
+            </div>
+        </div>
+        <div class="modal" id="hopper-modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <h1 class="modal-card-title">Hopper Project</h1>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="content">
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                </footer>
+            </div>
+        </div>
+        <div class="modal" id="play-experience-modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <h1 class="modal-card-title">Play Experience Project</h1>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="content">
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                </footer>
+            </div>
+        </div>
+        
+
+        <!--Javascript to display and close modals-->
+        <script>
+            $(document).ready(function(){
+                $("#turning-point-tile").click(function() {
+                    $("#turning-point-modal").addClass("is-active");
+                })  
+                $("#tower-takeover-tile").click(function() {
+                    $("#tower-takeover-modal").addClass("is-active");
+                })        
+                $("#dbf-tile").click(function() {
+                    $("#dbf-modal").addClass("is-active");
+                })
+                $("#pan-tilt-tile").click(function() {
+                    $("#pan-tilt-modal").addClass("is-active");
+                })
+                $("#hopper-tile").click(function() {
+                    $("#hopper-modal").addClass("is-active");
+                })
+                $("#play-experience-tile").click(function() {
+                    $("#play-experience-modal").addClass("is-active");
+                })
+
+                $(".delete").click(function() {
+                    $(".modal").removeClass("is-active");
+                })
+            })
+        </script>
+    </body>
+</html>
