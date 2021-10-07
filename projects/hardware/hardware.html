@@ -158,6 +158,12 @@
                                     <img src="../../images/hardware/3dscanner.jpg">
                                 </figure>
                                 <p class="subtitle pt-2">
+                                    A pan-tilt mechanism with accompanying Arduino software for maneuvering an
+                                    infrared (IR) sensor to scan objects in space. This project was created for the
+                                    Principles of Integrated Engineering (PIE) class at Olin. I created the
+                                    concentric frame design for the movement to keep all rotations on the same
+                                    axes. I wrote Python software that communicated through the Arudino's serial connection
+                                    to write commands to the Arduino to move the servo motors and read sensor values.
                                 </p>
                             </div>  
                         </div>
@@ -165,16 +171,31 @@
                             <div class="tile is-child notification is-primary" id="hopper-tile">
                                 <p class="title">Hopper Project</p>
                                 <figure class="image">
-
+                                    <img src="../../images/hardware/hopper.jpg">
                                 </figure>
                                 <p class="subtitle pt-2">
+                                    A nature-inpsired simple mechanical device that can hop into the air, triggered
+                                    by a passive mechanism. My design was inspried by the springtail, which uses a long
+                                    tail to strike the ground and flip up into the air. This project was created for Design
+                                    Nature, a first-year design class at Olin.
                                 </p>
                             </div>
                         </div>            
                         <div class="tile is-parent">     
                             <div class="tile is-child notification is-link" id="play-experience-tile">
                                 <p class="title">Play Experience Project</p>
+                                <figure class="image">
+                                    <img src="../../images/hardware/playexperience.JPG">
+                                </figure>
                                 <p class="subtitle pt-2">
+                                    A nature inspired play experience for 4th graders at a local elementary school to try with their
+                                    families. We created a game based on the camoflauging behavior of cuttlefish. Cuttlefish
+                                    use a combination of different patterns overlayed to become camoglauged in the
+                                    ocean. We used transparent films with printed patterns overlayed in a circular
+                                    frame to achieve a similar effect, challenging kids to try to replicate patterns on
+                                    pattern cards and/or create their own patterns. We chose patterns that would
+                                    become dynamic when they were slid past each other to get kids interested in
+                                    visual design and the math behind the patterns as well as about cuttlefish themselves.
                                 </p>
                             </div>    
                         </div>                    
@@ -285,24 +306,24 @@
         <!--Javascript to display and close modals-->
         <script>
             $(document).ready(function(){
-                $("#turning-point-tile").click(function() {
-                    $("#turning-point-modal").addClass("is-active");
-                })  
-                $("#tower-takeover-tile").click(function() {
-                    $("#tower-takeover-modal").addClass("is-active");
-                })        
-                $("#dbf-tile").click(function() {
-                    $("#dbf-modal").addClass("is-active");
-                })
-                $("#pan-tilt-tile").click(function() {
-                    $("#pan-tilt-modal").addClass("is-active");
-                })
-                $("#hopper-tile").click(function() {
-                    $("#hopper-modal").addClass("is-active");
-                })
-                $("#play-experience-tile").click(function() {
-                    $("#play-experience-modal").addClass("is-active");
-                })
+                // $("#turning-point-tile").click(function() {
+                //     $("#turning-point-modal").addClass("is-active");
+                // })  
+                // $("#tower-takeover-tile").click(function() {
+                //     $("#tower-takeover-modal").addClass("is-active");
+                // })        
+                // $("#dbf-tile").click(function() {
+                //     $("#dbf-modal").addClass("is-active");
+                // })
+                // $("#pan-tilt-tile").click(function() {
+                //     $("#pan-tilt-modal").addClass("is-active");
+                // })
+                // $("#hopper-tile").click(function() {
+                //     $("#hopper-modal").addClass("is-active");
+                // })
+                // $("#play-experience-tile").click(function() {
+                //     $("#play-experience-modal").addClass("is-active");
+                // })
 
                 $(".delete").click(function() {
                     $(".modal").removeClass("is-active");
