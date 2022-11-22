@@ -61,10 +61,12 @@
                 <div class="box">
                     <h1 class="title is-1 has-text-black has-text-centered">Software</h1>
                     <div class="content is-size-4 has-text-centered">
-                        I began learning basic programming from my brother in 2012, and since then have learned several languages, including
-                        Java, Python, Swift, and HTML/CSS (this website!), and have picked up skills in Matlab, Git, server administration, and command line.
+                        I have experience in several programming languages, including
+                        Python, Swift, Java, and HTML/CSS, and have picked up skills in Matlab, Git, server administration, and command line.
+                        I have worked with libaries and tools such as ROS, OpenCV, and ARKit. My projects have included games, computer vision,
+                        robotics algorithms (localization, mapping), hardware integration, and data analysis.
                         My Github profile is <b><a href="https://github.com/al-li-son" target="_blank">al-li-son</a></b>.
-                        Explore my projects below!
+                        Explore my projects below! Click on a tile for more detail.
                     </div>                    
                 </div>
             </div>
@@ -72,6 +74,50 @@
         <!--Project tiles-->
         <div class="tile is-ancestor pt-4 px-4">
             <div class="tile is-vertical">
+                <div class="tile">
+                    <div class="tile">
+                        <div class="tile is-parent">
+                            <div class="tile is-child notification is-info" id="field-autonomy-tile">
+                                <p class="title">Autonomous Trail Robot [in progress]</p>
+                                <figure class="image">
+                                    <img src="../../images/software/arkit_data_stream_demo.gif">
+                                </figure>
+                                <p class="subtitle pt-2">
+                                    Retrofitting an existing remote controlled off-road vehicle,
+                                    <a href="https://spykerworkshop.com/shop/cyberkat/cyberkat-kit/" target="_blank">the CyberKAT</a>, with
+                                    a hardware system running ROS2 to convert it to an autonomous robot capable of navigating trails. A final
+                                    project for A Computational Introduction to Robotics at Olin College of Engineering.
+                                </p>
+                            </div>  
+                        </div>
+                        <div class="tile is-parent">
+                            <div class="tile is-child notification is-primary" id="cv-project-tile">
+                                <p class="title">Visual Odometry Using AprilTags</p>
+                                <figure class="image">
+                                    <img src="../../images/software/visual-odom.gif">
+                                </figure>
+                                <p class="subtitle pt-2">
+                                    A package that can detect and visualize AprilTags and track the relative movement of a Neato robot
+                                    based on the changing position relative to the camera of an AprilTag. A project for A Computational
+                                    Introduction to Robotics at Olin College of Engineering.
+                                </p>
+                            </div>
+                        </div>            
+                        <div class="tile is-parent">     
+                            <div class="tile is-child notification is-link" id="robot-localization-tile">
+                                <p class="title">Robot Localization</p>
+                                <div class="content">
+                                    <img src="../../images/software/robot-localization.gif">
+                                </div>
+                                <p class="subtitle pt-2">
+                                    Localize a robot in a known map given a starting position and 2D LiDAR scan data. Uses a
+                                    particle filter to accomplish the task. A project for A Computational Introduction to Robotics
+                                    at Olin College of Engineering.
+                                </p>
+                            </div>    
+                        </div>                    
+                    </div>              
+                </div>                
                 <div class="tile">
                     <div class="tile is-parent">
                         <div class="tile is-child notification is-link" id="invisible-map-tile">
@@ -91,10 +137,7 @@
                             <p class="subtitle pt-2">
                                 iOS apps aimed to assist blind and visually impaired (BVI) people with indoor navigation.
                                 I worked on this project through the Olin College Crowdsourcing and Machine Learning 
-                                (OCCaM) lab, an assistive technology focused lab run by Paul Ruvolo. My main goals for the
-                                research experience were to learn app development (both UI and back-end), understand theoretical
-                                concepts behind SLAM graph optimization problems, and learn the process of working closely
-                                with co-designers to create the best experience for the users of the app in the BVI community.
+                                (OCCaM) lab, an assistive technology focused lab run by Paul Ruvolo.
                             </p>
                         </div>  
                     </div>
@@ -120,9 +163,8 @@
                             </div>
                             <p class="subtitle pt-2">
                                 A 2D infinite world survival thriller game programmed using Python's pygame library.
-                                I worked on this game as a final project for Software Design. I primarily practiced
-                                skills in designing code architecture (Model View Controller structure) through this
-                                project.
+                                A final project for Software Design at Olin College of Engineering. This project primarily
+                                developed skills in designing code architecture (Model View Controller structure).
                             </p>
                         </div>
                     </div>            
@@ -134,8 +176,8 @@
                             </figure>
                             <p class="subtitle pt-2">
                                 A data analysis project examining whether there is a connection between the calculated sentiment
-                                of an initial comment on a Reddit post and the sentiment of the subsequent replies. I worked on
-                                this project as a midterm project for Software Design. The goal of the project was to practice 
+                                of an initial comment on a Reddit post and the sentiment of the subsequent replies. A midterm project
+                                for Software Design at Olin College of Engineering. The goal of the project was to practice 
                                 skills in using APIs to obtain and organize data and using Python and Jupyter Notebooks to manipulate,
                                 visualize, and analyze the data.
                             </p>
@@ -153,12 +195,8 @@
                                 <p class="subtitle pt-2">
                                     An algorithm written in Matlab to identify handwritten digits in an image
                                     and also perform rudimentary arithmetic. Our algorithm is a slight modification
-                                    of the Eigenfaces facial recognition algorithm. This project was created for
-                                    Quantitative Engineering Analysis 1. My primary goals with the project were to
-                                    see whether Eigenfaces could be successfully modified to apply to a dataset that did not
-                                    contain faces and to advance on the algorithm, and to add the additional feature of
-                                    splitting up an image with multiple digits and constructing an equation from
-                                    it.
+                                    of the Eigenfaces facial recognition algorithm. A final project for
+                                    Quantitative Engineering Analysis 1 at Olin College of Engineering. 
                                 </p>
                             </div>  
                         </div>
@@ -173,7 +211,7 @@
                                     It includes menu objects to manipulate different parameters of the Julia Set equation, as
                                     as for panning and zooming across the visualization. The project was a way to get to know
                                     fractals as a mathematical concept on a basic level, while getting more familiar with Java GUI
-                                    components. This was a project for Data Structures. 
+                                    components. A project for Data Structures at South Brunswick High School. 
                                 </p>
                             </div>
                         </div>            
@@ -187,7 +225,8 @@
                                     A version of the popular classic Windows game Minesweeper coded in Java. It includes the standard three
                                     modes and has the timer and mines counter, as well as additional options to change the icons of the
                                     game. The main goal of this project was to get more familiar with basic game design and
-                                    to develop skills with Java GUI elements. This was created for Data Structures.
+                                    to develop skills with Java GUI elements. A project for Data Structures at South Brunswick
+                                    High School.
                                 </p>
                             </div>    
                         </div>                    
@@ -204,7 +243,7 @@
                                 A 3D maze game where a player navigates through different levels, collecting items
                                 with the goal of making it to the end. The main goal of this project was to
                                 familiarize myself with Java GUI and challenge myself with mimicking perspective
-                                in 2D. This was created for Data Structures.
+                                in 2D. A project for Data Structures at South Brunswick High School.
                             </p>
                         </div>  
                     </div>
@@ -224,6 +263,74 @@
             </div>
         </div>
         <!--Project description modal overlays-->
+        <div class="modal" id="field-autonomy-modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <h1 class="modal-card-title">Autonomous Trail Robot [in progress]</h1>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="content">
+                        <p>
+                            I am currently responsible for our sensor subsystem. We are using an iPhone to stream odometry data and
+                            camera images. I developed an iOS app using the ARKit library
+                            to upload UDP packets containing the relative device pose and live camera feed via wired connection to a
+                            computer. The computer runs custom ROS2 nodes which process the packets and publish them to ROS2 topics to
+                            be used by our CV system that detects trails.
+                        </p>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                    <p>
+                        All code for this project can be found in our 
+                        <a href="https://github.com/hnvakil/field_autonomy" target="_blank">
+                            field autonomy project Github repository
+                        </a>.
+                    </p>
+                </footer>
+            </div>
+        </div>
+        <div class="modal" id="cv-project-modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <h1 class="modal-card-title">Visual Odometry Using AprilTags</h1>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="content">
+                        A writeup of this project and all code can be found in our 
+                        <a href="https://github.com/jerWenger/Visual_Based_Odometry" target="_blank">
+                            visual odometry project Github repository
+                        </a>.
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+
+                </footer>
+            </div>
+        </div>
+        <div class="modal" id="robot-localization-modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <h1 class="modal-card-title">Robot Localization</h1>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="content">
+                        A writeup and all code for this project can be found in my
+                        <a href="https://github.com/al-li-son/robot_localization" target="_blank">
+                            robot localization Github repository
+                        </a>.
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+
+                </footer>
+            </div>
+        </div>         
         <div class="modal" id="invisible-map-modal">
             <div class="modal-background"></div>
             <div class="modal-card">
@@ -233,10 +340,30 @@
                 </header>
                 <section class="modal-card-body">
                     <div class="content">
+                        <p>
+                            My main goals for the research experience were to learn app development (both UI and back-end),
+                            understand theoretical concepts behind SLAM graph optimization problems, and learn the process of working
+                            closely with co-designers to create the best experience for the users of the app in the BVI community.
+                            I also worked on our project website to create a central location for documenting progress on the apps,
+                            streamlining the onboarding process for new researchers, and making the project accessible for the public
+                        </p>
                     </div>
                 </section>
                 <footer class="modal-card-foot">
-
+                    <p>
+                        Additional information can be found on 
+                        <a href="https://occamlab.github.io/invisible-map-generation/" target="_blank">
+                            our project website
+                        </a> 
+                        and all code is in the
+                        <a href="https://github.com/occamLab/InvisibleMap" target="_blank">
+                            Invisible Map Github repository
+                        </a>
+                        and the
+                        <a href="https://github.com/occamLab/invisible-map-generation" target="_blank">
+                            Invisible Map generation Github repository
+                        </a>    
+                    </p>
                 </footer>
             </div>
         </div>
@@ -249,6 +376,14 @@
                 </header>
                 <section class="modal-card-body">
                     <div class="content">
+                        A demo and more details on our game can be found on our
+                        <a href="https://olincollege.github.io/point-of-no-return/" target="_blank">
+                            Point of No Return website.
+                        </a>
+                        All code is in our
+                        <a href="https://github.com/olincollege/point-of-no-return" target="_blank">
+                            Github repository.
+                        </a>
                     </div>
                 </section>
                 <footer class="modal-card-foot">
@@ -265,6 +400,13 @@
                 </header>
                 <section class="modal-card-body">
                     <div class="content">
+                        A 
+                        <a href="https://github.com/olincollege/reddit-sentiment/blob/main/reddit-sentiment-analysis.ipynb" target="_blank">
+                            writeup of our work
+                        </a> and all code can be found in our
+                        <a href="https://github.com/olincollege/reddit-sentiment" target="_blank">
+                            Reddit sentiment analysis Github repository.
+                        </a>
                     </div>
                 </section>
                 <footer class="modal-card-foot">
@@ -281,10 +423,22 @@
                 </header>
                 <section class="modal-card-body">
                     <div class="content">
+                        <p>
+                            Our primary goals with the project were to
+                            see whether Eigenfaces could be successfully modified to apply to a dataset that did not
+                            contain faces and to advance on the algorithm, and to add the additional feature of
+                            splitting up an image with multiple digits and constructing an equation from
+                            it.
+                        </p>
                     </div>
                 </section>
                 <footer class="modal-card-foot">
-
+                    <p>
+                        The results of this project are summarized in
+                        <a href="https://docs.google.com/document/d/e/2PACX-1vROrp9QJdh3ZnhlYD19NcaXZ2QfDLLB-w0Mf3zfsjt7ew_Cfwd9xoRGcgJcLrddbXmWrI6McxPMIuo4/pub" target="_blank">
+                            our final report
+                        </a>.
+                    </p>
                 </footer>
             </div>
         </div>     
@@ -297,6 +451,10 @@
                 </header>
                 <section class="modal-card-body">
                     <div class="content">
+                        The code for this project can be found in the
+                        <a href="https://github.com/al-li-son/interactive-java-projects/tree/main/julia-set-visualization" target="_blank">
+                            julia-set-visualization folder of my interactive Java projects Github repository
+                        </a>.
                     </div>
                 </section>
                 <footer class="modal-card-foot">
@@ -313,6 +471,10 @@
                 </header>
                 <section class="modal-card-body">
                     <div class="content">
+                        The code for this project can be found in the
+                        <a href="https://github.com/al-li-son/interactive-java-projects/tree/main/Minesweeper" target="_blank">
+                            Minesweeper folder of my interactive Java projects Github repository
+                        </a>.
                     </div>
                 </section>
                 <footer class="modal-card-foot">
@@ -329,6 +491,10 @@
                 </header>
                 <section class="modal-card-body">
                     <div class="content">
+                        The code for this project can be found in the
+                        <a href="https://github.com/al-li-son/interactive-java-projects/tree/main/3d-maze" target="_blank">
+                            3d-maze folder of my interactive Java projects Github repository
+                        </a>.
                     </div>
                 </section>
                 <footer class="modal-card-foot">
@@ -340,33 +506,45 @@
         <!--Javascript to display and close modals-->
         <script>
             $(document).ready(function(){
-                // $("#invisible-map-tile").click(function() {
-                //     $("#invisible-map-modal").addClass("is-active");
-                // })
+                $("#field-autonomy-tile").click(function() {
+                    $("#field-autonomy-modal").addClass("is-active");
+                })
 
-                // $("#point-of-no-return-tile").click(function() {
-                //     $("#point-of-no-return-modal").addClass("is-active");
-                // })
+                $("#cv-project-tile").click(function() {
+                    $("#cv-project-modal").addClass("is-active");
+                })
 
-                // $("#sentiment-analysis-tile").click(function() {
-                //     $("#sentiment-analysis-modal").addClass("is-active");
-                // })
+                $("#robot-localization-tile").click(function() {
+                    $("#robot-localization-modal").addClass("is-active");
+                })
 
-                // $("#digit-recognition-tile").click(function() {
-                //     $("#digit-recognition-modal").addClass("is-active");
-                // })          
+                $("#invisible-map-tile").click(function() {
+                    $("#invisible-map-modal").addClass("is-active");
+                })
+
+                $("#point-of-no-return-tile").click(function() {
+                    $("#point-of-no-return-modal").addClass("is-active");
+                })
+
+                $("#sentiment-analysis-tile").click(function() {
+                    $("#sentiment-analysis-modal").addClass("is-active");
+                })
+
+                $("#digit-recognition-tile").click(function() {
+                    $("#digit-recognition-modal").addClass("is-active");
+                })          
                 
-                // $("#julia-set-tile").click(function() {
-                //     $("#julia-set-modal").addClass("is-active");
-                // })     
+                $("#julia-set-tile").click(function() {
+                    $("#julia-set-modal").addClass("is-active");
+                })     
 
-                // $("#minesweeper-tile").click(function() {
-                //     $("#minesweeper-modal").addClass("is-active");
-                // })         
+                $("#minesweeper-tile").click(function() {
+                    $("#minesweeper-modal").addClass("is-active");
+                })         
                 
-                // $("#3d-maze-tile").click(function() {
-                //     $("#3d-maze-modal").addClass("is-active");
-                // })  
+                $("#3d-maze-tile").click(function() {
+                    $("#3d-maze-modal").addClass("is-active");
+                })  
 
                 $(".delete").click(function() {
                     $(".modal").removeClass("is-active");
