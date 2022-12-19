@@ -78,12 +78,15 @@
                     <div class="tile">
                         <div class="tile is-parent">
                             <div class="tile is-child notification is-info" id="field-autonomy-tile">
-                                <p class="title">Autonomous Trail Robot [in progress]</p>
+                                <p class="title">Autonomous Trail Robot</p>
                                 <figure class="image">
-                                    <img src="../../images/software/arkit_data_stream_demo.gif">
+                                    <video controls>
+                                        <source src="../../images/software/drive_with_odom.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video> 
                                 </figure>
                                 <p class="subtitle pt-2">
-                                    Retrofitting an existing remote controlled off-road vehicle,
+                                    Retrofit an existing remote controlled off-road vehicle,
                                     <a href="https://spykerworkshop.com/shop/cyberkat/cyberkat-kit/" target="_blank">the CyberKAT</a>, with
                                     a hardware system running ROS2 to convert it to an autonomous robot capable of navigating trails. A final
                                     project for A Computational Introduction to Robotics at Olin College of Engineering.
@@ -273,19 +276,23 @@
                 <section class="modal-card-body">
                     <div class="content">
                         <p>
-                            I am currently responsible for our sensor subsystem. We are using an iPhone to stream odometry data and
-                            camera images. I developed an iOS app using the ARKit library
-                            to upload UDP packets containing the relative device pose and live camera feed via wired connection to a
-                            computer. The computer runs custom ROS2 nodes which process the packets and publish them to ROS2 topics to
-                            be used by our CV system that detects trails.
+                            I was responsible for our sensor subsystem. We are using an iPhone to stream odometry data,
+                            camera images, and GPS location. I developed an iOS app using the ARKit library
+                            to upload UDP packets containing the relative device pose live camera feed, and GPS coordinates
+                            via wirelss connection to a computer. The computer runs custom ROS2 nodes which process the packets 
+                            and publish them to ROS2 topics to be used by our CV system that detects trails.
                         </p>
                     </div>
                 </section>
                 <footer class="modal-card-foot">
                     <p>
-                        All code for this project can be found in our 
+                        More information about and demos of our project can be found on
+                        <a href="https://hnvakil.github.io/field_autonomy/index.html" target="_blank">
+                            our project website
+                        </a>, 
+                        and all code can be found in our 
                         <a href="https://github.com/hnvakil/field_autonomy" target="_blank">
-                            field autonomy project Github repository
+                            field autonomy Github repository
                         </a>.
                     </p>
                 </footer>
