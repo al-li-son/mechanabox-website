@@ -37,10 +37,10 @@
                         </a>
                         <div class="navbar-dropdown">
                             <a class="navbar-item" href=software.html>
-                                Software
+                                Software/Integration
                             </a>
                             <a class="navbar-item" href=../hardware/hardware.html>
-                                Hardware
+                                Mechanical/Hardware
                             </a>
                             <a class="navbar-item"  href=../cubing/cubing.html>
                                 Cubing
@@ -59,12 +59,12 @@
         <section class="hero is-small is-info is-bold">
             <div class="hero-body">
                 <div class="box">
-                    <h1 class="title is-1 has-text-black has-text-centered">Software</h1>
+                    <h1 class="title is-1 has-text-black has-text-centered">Software & Integration</h1>
                     <div class="content is-size-4 has-text-centered">
                         I have experience in several programming languages, including
                         Python, Swift, Java, and HTML/CSS, and have picked up skills in Matlab, Git, server administration, and command line.
-                        I have worked with libaries and tools such as ROS, OpenCV, and ARKit. My projects have included games, computer vision,
-                        robotics algorithms (localization, mapping), hardware integration, and data analysis.
+                        I have worked with libaries and tools such as ROS, OpenCV, MIT Drake simulation, and ARKit. My projects have included games, 
+                        computer vision, robotics algorithms (localization, mapping, manipulation, perception), hardware integration, and data analysis.
                         My Github profile is <b><a href="https://github.com/al-li-son" target="_blank">al-li-son</a></b>.
                         Explore my projects below! Click on a tile for more detail.
                     </div>                    
@@ -77,7 +77,30 @@
                 <div class="tile">
                     <div class="tile">
                         <div class="tile is-parent">
-                            <div class="tile is-child notification is-info" id="field-autonomy-tile">
+                            <div class="tile is-child notification is-info" id="kinetic-art-tile">
+                                <p class="title">Kinetic Art Display</p>
+
+                                <p class="subtitle pt-2">
+                                    For the 2024 Formlabs Summer Hackathon, my team created a kinetic art display composed of 40 linear 
+                                    stepper motors embedded in the shells from two Form 2s. I was the sole integration and software engineer, 
+                                    in charge of installing firmware on the five MKS Monster 8 v2 boards to control all 40 motors and writing 
+                                    software to control the boards over serial with a Raspberry Pi.
+                                </p>
+                            </div>  
+                        </div>
+                        <div class="tile is-parent">
+                            <div class="tile is-child notification is-primary" id="amrobo-scope-tile">
+                                <p class="title">Robot Object Manipulation Taxonomy | Amazon Robotics sponsored SCOPE Project</p>
+
+                                <p class="subtitle pt-2">
+                                    For my Senior Capstone Program in Engineering project (SCOPE), my team partnered with Amazon Robotics to 
+                                    create an authonomous method of choosing the most effective end effector (gripper on the end of an arm) for 
+                                    any given object.
+                                </p>
+                            </div>
+                        </div>            
+                        <div class="tile is-parent">     
+                            <div class="tile is-child notification is-link" id="field-autonomy-tile">
                                 <p class="title">Autonomous Trail Robot</p>
                                 <figure class="image">
                                     <video controls>
@@ -91,39 +114,39 @@
                                     a hardware system running ROS2 to convert it to an autonomous robot capable of navigating trails. A final
                                     project for A Computational Introduction to Robotics at Olin College of Engineering.
                                 </p>
-                            </div>  
-                        </div>
-                        <div class="tile is-parent">
-                            <div class="tile is-child notification is-primary" id="cv-project-tile">
-                                <p class="title">Visual Odometry Using AprilTags</p>
-                                <figure class="image">
-                                    <img src="../../images/software/visual-odom.gif">
-                                </figure>
-                                <p class="subtitle pt-2">
-                                    A package that can detect and visualize AprilTags and track the relative movement of a Neato robot
-                                    based on the changing position relative to the camera of an AprilTag. A project for A Computational
-                                    Introduction to Robotics at Olin College of Engineering.
-                                </p>
-                            </div>
-                        </div>            
-                        <div class="tile is-parent">     
-                            <div class="tile is-child notification is-link" id="robot-localization-tile">
-                                <p class="title">Robot Localization</p>
-                                <div class="content">
-                                    <img src="../../images/software/robot-localization.gif">
-                                </div>
-                                <p class="subtitle pt-2">
-                                    Localize a robot in a known map given a starting position and 2D LiDAR scan data. Uses a
-                                    particle filter to accomplish the task. A project for A Computational Introduction to Robotics
-                                    at Olin College of Engineering.
-                                </p>
                             </div>    
                         </div>                    
                     </div>              
                 </div>                
                 <div class="tile">
                     <div class="tile is-parent">
-                        <div class="tile is-child notification is-link" id="invisible-map-tile">
+                        <div class="tile is-child notification is-link" id="cv-project-tile">
+                            <p class="title">Visual Odometry Using AprilTags</p>
+                            <figure class="image">
+                                <img src="../../images/software/visual-odom.gif">
+                            </figure>                            
+                            <p class="subtitle pt-2">
+                                A package that can detect and visualize AprilTags and track the relative movement of a Neato robot
+                                based on the changing position relative to the camera of an AprilTag. A project for A Computational
+                                Introduction to Robotics at Olin College of Engineering.
+                            </p>
+                        </div>  
+                    </div>
+                    <div class="tile is-parent">
+                        <div class="tile is-child notification is-success" id="robot-localization-tile">
+                            <p class="title">Robot Localization</p>
+                            <div class="content">
+                                <img src="../../images/software/robot-localization.gif">
+                            </div>
+                            <p class="subtitle pt-2">
+                                Localize a robot in a known map given a starting position and 2D LiDAR scan data. Uses a
+                                particle filter to accomplish the task. A project for A Computational Introduction to Robotics
+                                at Olin College of Engineering.
+                            </p>
+                        </div>
+                    </div>            
+                    <div class="tile is-parent">     
+                        <div class="tile is-child notification is-info" id="invisible-map-tile">
                             <p class="title">Invisible Map & Map Creator</p>
                             <div class="columns is-vcentered is-centered">
                                 <div class="column is-vcentered">
@@ -142,55 +165,55 @@
                                 I worked on this project through the Olin College Crowdsourcing and Machine Learning 
                                 (OCCaM) lab, an assistive technology focused lab run by Paul Ruvolo.
                             </p>
-                        </div>  
-                    </div>
-                    <div class="tile is-parent">
-                        <div class="tile is-child notification is-success" id="point-of-no-return-tile">
-                            <p class="title">Point of No Return</p>
-                            <div class="columns is-gapless is-vcentered is-centered">
-                                <div class="column is-vcentered">
-                                    <div class="content">
-                                        <img src="../../images/software/player.png">
-                                    </div>
-                                </div>
-                                <div class="column is-vcentered">
-                                    <div class="content">
-                                        <img src="../../images/software/demon.png">
-                                    </div>
-                                </div>
-                                <div class="column is-vcentered">
-                                    <div class="content">
-                                        <img src="../../images/software/obstacle.png">
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="subtitle pt-2">
-                                A 2D infinite world survival thriller game programmed using Python's pygame library.
-                                A final project for Software Design at Olin College of Engineering. This project primarily
-                                developed skills in designing code architecture (Model View Controller structure).
-                            </p>
-                        </div>
-                    </div>            
-                    <div class="tile is-parent">     
-                        <div class="tile is-child notification is-info" id="sentiment-analysis-tile">
-                            <p class="title">Reddit Sentiment Analysis</p>
-                            <figure class="image">
-                                <img src="../../images/software/reddit-sentiment.png">
-                            </figure>
-                            <p class="subtitle pt-2">
-                                A data analysis project examining whether there is a connection between the calculated sentiment
-                                of an initial comment on a Reddit post and the sentiment of the subsequent replies. A midterm project
-                                for Software Design at Olin College of Engineering. The goal of the project was to practice 
-                                skills in using APIs to obtain and organize data and using Python and Jupyter Notebooks to manipulate,
-                                visualize, and analyze the data.
-                            </p>
                         </div>    
                     </div>                    
                 </div>
                 <div class="tile">
                     <div class="tile">
                         <div class="tile is-parent">
-                            <div class="tile is-child notification is-info" id="digit-recognition-tile">
+                            <div class="tile is-child notification is-info" id="point-of-no-return-tile">
+                                <p class="title">Point of No Return</p>
+                                <div class="columns is-gapless is-vcentered is-centered">
+                                    <div class="column is-vcentered">
+                                        <div class="content">
+                                            <img src="../../images/software/player.png">
+                                        </div>
+                                    </div>
+                                    <div class="column is-vcentered">
+                                        <div class="content">
+                                            <img src="../../images/software/demon.png">
+                                        </div>
+                                    </div>
+                                    <div class="column is-vcentered">
+                                        <div class="content">
+                                            <img src="../../images/software/obstacle.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="subtitle pt-2">
+                                    A 2D infinite world survival thriller game programmed using Python's pygame library.
+                                    A final project for Software Design at Olin College of Engineering. This project primarily
+                                    developed skills in designing code architecture (Model View Controller structure).
+                                </p>
+                            </div>  
+                        </div>
+                        <div class="tile is-parent">
+                            <div class="tile is-child notification is-primary" id="sentiment-analysis-tile">
+                                <p class="title">Reddit Sentiment Analysis</p>
+                                <figure class="image">
+                                    <img src="../../images/software/reddit-sentiment.png">
+                                </figure>
+                                <p class="subtitle pt-2">
+                                    A data analysis project examining whether there is a connection between the calculated sentiment
+                                    of an initial comment on a Reddit post and the sentiment of the subsequent replies. A midterm project
+                                    for Software Design at Olin College of Engineering. The goal of the project was to practice 
+                                    skills in using APIs to obtain and organize data and using Python and Jupyter Notebooks to manipulate,
+                                    visualize, and analyze the data.
+                                </p>
+                            </div>
+                        </div>            
+                        <div class="tile is-parent">     
+                            <div class="tile is-child notification is-link" id="digit-recognition-tile">
                                 <p class="title">Handwritten Digit Recognition Algorithm</p>
                                 <figure class="image">
                                     <img src="../../images/software/digit-recognition.jpg">
@@ -201,43 +224,43 @@
                                     of the Eigenfaces facial recognition algorithm. A final project for
                                     Quantitative Engineering Analysis 1 at Olin College of Engineering. 
                                 </p>
-                            </div>  
-                        </div>
-                        <div class="tile is-parent">
-                            <div class="tile is-child notification is-primary" id="julia-set-tile">
-                                <p class="title">Julia Set Visualization</p>
-                                <figure class="image">
-                                    <img src="../../images/software/julia-set-visualization.png">
-                                </figure>
-                                <p class="subtitle pt-2">
-                                    An interactive Java program to visualize the <a href="https://en.wikipedia.org/wiki/Julia_set" target="_blank">Julia Set</a>.
-                                    It includes menu objects to manipulate different parameters of the Julia Set equation, as
-                                    as for panning and zooming across the visualization. The project was a way to get to know
-                                    fractals as a mathematical concept on a basic level, while getting more familiar with Java GUI
-                                    components. A project for Data Structures at South Brunswick High School. 
-                                </p>
-                            </div>
-                        </div>            
-                        <div class="tile is-parent">     
-                            <div class="tile is-child notification is-link" id="minesweeper-tile">
-                                <p class="title">Minesweeper</p>
-                                <div class="content">
-                                    <img src="../../images/software/minesweeper.png">
-                                </div>
-                                <p class="subtitle pt-2">
-                                    A version of the popular classic Windows game Minesweeper coded in Java. It includes the standard three
-                                    modes and has the timer and mines counter, as well as additional options to change the icons of the
-                                    game. The main goal of this project was to get more familiar with basic game design and
-                                    to develop skills with Java GUI elements. A project for Data Structures at South Brunswick
-                                    High School.
-                                </p>
                             </div>    
                         </div>                    
                     </div>              
                 </div>
                 <div class="tile">
                     <div class="tile is-parent">
-                        <div class="tile is-child notification is-link" id="3d-maze-tile">
+                        <div class="tile is-child notification is-link" id="julia-set-tile">
+                            <p class="title">Julia Set Visualization</p>
+                            <figure class="image">
+                                <img src="../../images/software/julia-set-visualization.png">
+                            </figure>
+                            <p class="subtitle pt-2">
+                                An interactive Java program to visualize the <a href="https://en.wikipedia.org/wiki/Julia_set" target="_blank">Julia Set</a>.
+                                It includes menu objects to manipulate different parameters of the Julia Set equation, as
+                                as for panning and zooming across the visualization. The project was a way to get to know
+                                fractals as a mathematical concept on a basic level, while getting more familiar with Java GUI
+                                components. A project for Data Structures at South Brunswick High School. 
+                            </p>
+                        </div>  
+                    </div>
+                    <div class="tile is-parent">
+                        <div class="tile is-child notification is-success" id="minesweeper-tile">
+                            <p class="title">Minesweeper</p>
+                            <div class="content">
+                                <img src="../../images/software/minesweeper.png">
+                            </div>
+                            <p class="subtitle pt-2">
+                                A version of the popular classic Windows game Minesweeper coded in Java. It includes the standard three
+                                modes and has the timer and mines counter, as well as additional options to change the icons of the
+                                game. The main goal of this project was to get more familiar with basic game design and
+                                to develop skills with Java GUI elements. A project for Data Structures at South Brunswick
+                                High School.
+                            </p>
+                        </div>
+                    </div>            
+                    <div class="tile is-parent">     
+                        <div class="tile is-child notification is-info" id="3d-maze-tile">
                             <p class="title">3D Maze Game</p>
                             <div class="content">
                                 <img src="../../images/software/3d-maze.png">
@@ -248,29 +271,73 @@
                                 familiarize myself with Java GUI and challenge myself with mimicking perspective
                                 in 2D. A project for Data Structures at South Brunswick High School.
                             </p>
-                        </div>  
-                    </div>
-                    <div class="tile is-parent">
-                        <div class="tile is-child notification is-success">
-                            <p class="title"></p>
-                            <p class="subtitle"></p>
-                        </div>
-                    </div>            
-                    <div class="tile is-parent">     
-                        <div class="tile is-child notification is-info">
-                            <p class="title"></p>
-                            <p class="subtitle"></p>
                         </div>    
                     </div>                    
                 </div>
             </div>
         </div>
         <!--Project description modal overlays-->
+        <div class="modal" id="kinetic-art-modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <h1 class="modal-card-title">Kinetic Art Display</h1>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="content">
+                        <p>
+
+                        </p>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                    <p>
+                        Demos and code for our project can be found on our 
+                        <a href="https://github.com/al-li-son/kinetic-art-display" target="_blank">
+                            kinetic art Github repository
+                        </a>.
+                    </p>
+                </footer>
+            </div>
+        </div>
+        <div class="modal" id="amrobo-scope-modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <h1 class="modal-card-title">Robot Object Manipulation Taxonomy</h1>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="content">
+                        <p>
+
+                        </p>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                    <p>
+                        More detail about our project can be found in our
+                        <a href="" target="_blank">
+                            final presentation
+                        </a>.
+                        and on our
+                        <a href="" target="_blank">
+                            final poster.
+                        </a>
+                        All of our code can be found in our 
+                        <a href="" target="_blank">
+                            Github repository.
+                        </a>
+                    </p>
+                </footer>
+            </div>
+        </div>
         <div class="modal" id="field-autonomy-modal">
             <div class="modal-background"></div>
             <div class="modal-card">
                 <header class="modal-card-head">
-                    <h1 class="modal-card-title">Autonomous Trail Robot [in progress]</h1>
+                    <h1 class="modal-card-title">Autonomous Trail Robot</h1>
                     <button class="delete" aria-label="close"></button>
                 </header>
                 <section class="modal-card-body">
@@ -513,6 +580,14 @@
         <!--Javascript to display and close modals-->
         <script>
             $(document).ready(function(){
+                $("#kinetic-art-tile").click(function() {
+                    $("#kinetic-art-modal").addClass("is-active");
+                })
+
+                $("#amrobo-scope-tile").click(function() {
+                    $("#amrobo-scope-modal").addClass("is-active");
+                })
+
                 $("#field-autonomy-tile").click(function() {
                     $("#field-autonomy-modal").addClass("is-active");
                 })
